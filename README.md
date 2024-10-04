@@ -2,7 +2,7 @@
 
 <br>
 
-![img](google-it-automation.jpg)
+![img](specializtion_certificate.jpg)
 
 * This repository written for reference and self-documentation purpose
 * Feel free to contribute!
