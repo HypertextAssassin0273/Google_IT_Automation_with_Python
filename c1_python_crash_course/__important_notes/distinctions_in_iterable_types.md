@@ -6,6 +6,8 @@
 ||
 | ![sequence](https://github.com/user-attachments/assets/4766daef-c6d9-41f7-bd44-1c5bfdb2e12d) |
 
+---
+
 | *Summarized Chart for Important Features of Iterables* |
 |:--:|
 | ![summarized_chart](https://github.com/user-attachments/assets/56dd3f4d-f0a5-44e2-93f6-2c74396d5a15) |
