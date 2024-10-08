@@ -21,6 +21,7 @@ This command creates a virtual environment named "myenv" in your project directo
 On Windows: ``` myenv\Scripts\activate ```
 
 On macOS and Linux: ``` myenv/bin/activate ```
+
 Once activated, your terminal prompt will change, indicating that you are now working within the virtual environment. You can now install packages using **pip** just like you normally would.
 
 ## Best practices and recommendations
