@@ -1,4 +1,4 @@
-## Qwiklabs Assessment: Working with Python Scripts
+## Qwiklabs Assessment: Working with Python Scripts [update: replaced with normal quiz]
 
 In this lab, you'll first have to fix an incorrect Python script. 
 
