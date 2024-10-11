@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-import requests
-import socket
+import requests, socket
 
 def check_localhost():
     localhost = socket.gethostbyname('localhost')
