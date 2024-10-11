@@ -9,3 +9,4 @@ In this module, you’ll learn about reading and writing to files and the comman
 * Understand how to create directories and navigate through directories
 * Define what CSV files are and be able to read from them
 * Understand how to write and make edits to CSV files within directories
+* Complete assessments through Qwiklabs
