@@ -8,4 +8,4 @@ In this module, you’ll learn about the different types of operating systems, a
 * Utilize their Python environment and install additional Python modules, if needed
 * Run Python locally on their machines
 * Understand the benefits of automation but be aware of the pitfalls
-* Complete all assessments through Qwiklabs
+* Complete assessments through Qwiklabs
