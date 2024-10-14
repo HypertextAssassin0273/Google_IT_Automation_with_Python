@@ -1,0 +1,4 @@
+Name,Phone,Role
+John Doe,1234567890,Software Engineer
+Jane Doe,0987654321,Data Scientist
+Alice,1234567890,IT Support
