@@ -154,7 +154,7 @@ Fill in the code to check if the text passed looks like a standard sentence, mea
 ```
 import re
 def check_sentence(text):
-  result = re.search(r"^[A-Z][a-z| ]*[.?!]$", text)
+  result = re.search(r"^[A-Z][a-z ]+[.?!]$", text)
   return result != None
 
 print(check_sentence("Is this is a sentence?")) # True
