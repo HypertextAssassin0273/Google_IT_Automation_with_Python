@@ -127,7 +127,7 @@ Fill in the code to check if the text passed has at least 2 groups of alphanumer
 ```
 import re
 def check_character_groups(text):
-  result = re.search(r"[0-9]\w", text)
+  result = re.search(r"\w+\s+\w+", text)
   return result != None
 
 print(check_character_groups("One")) # False
