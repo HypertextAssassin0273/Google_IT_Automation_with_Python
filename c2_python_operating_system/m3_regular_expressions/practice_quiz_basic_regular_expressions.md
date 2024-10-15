@@ -11,7 +11,7 @@ The check_web_address function checks if the text passed qualifies as a top-leve
 ```
 import re
 def check_web_address(text):
-  pattern = r'^[\w\._-]*\.[A-Za-z]*$'
+  pattern = r'^[\w\.-]+\.[a-zA-Z]+$'
   result = re.search(pattern, text)
   return result != None
 
@@ -41,7 +41,7 @@ The check_time function checks for the time format of a 12-hour clock, as follow
 ```
 import re
 def check_time(text):
-  pattern = r'^(1[0-2]|1?[1-9]):([0-5][0-9])( ?([AaPp][Mm]))'
+  pattern = r'^(1[0-2]?|[2-9]):[0-5][0-9] ?([AP]M|[ap]m)$'
   result = re.search(pattern, text)
   return result != None
 
@@ -69,7 +69,7 @@ The contains_acronym function checks the text for the presence of 2 or more char
 ```
 import re
 def contains_acronym(text):
-  pattern = r'\(+[A-Z0-9][a-zA-Z]*\)'
+  pattern = r'\([A-Z0-9][a-zA-Z0-9]+\)'
   result = re.search(pattern, text)
   return result != None
 
@@ -125,7 +125,7 @@ Fill in the code to check if the text passed includes a possible U.S. zip code, 
 ```
 import re
 def check_zip_code (text):
-  result = re.search(r' \d{5}| \d{5}-\d{4}', text)
+  result = re.search(r' \d{5}(-\d{4})?', text) # OR r' \d{5}| \d{5}-\d{4}'
   return result != None
 
 print(check_zip_code("The zip codes for New York are 10001 thru 11104.")) # True
