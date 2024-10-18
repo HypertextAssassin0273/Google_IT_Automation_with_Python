@@ -97,7 +97,7 @@ The transform_comments function converts comments in a Python script into those 
 ```
 import re
 def transform_comments(line_of_code):
-  result = re.sub(r'\#{1,}', r'//', line_of_code)
+  result = re.sub(r'#+', r'//', line_of_code)
   return result
 
 print(transform_comments("#### Start of program")) 
