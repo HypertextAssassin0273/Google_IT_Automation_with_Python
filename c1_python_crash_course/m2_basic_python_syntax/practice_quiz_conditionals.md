@@ -20,7 +20,7 @@ What's the value of this Python expression: `(2**2) == 4`?
 
 Complete the script by filling in the missing parts. The function receives a name, then returns a greeting based on whether or not that name is "Taylor".
 
-```
+```py
 def greeting(name):
   if name == "Taylor":
     return "Welcome back Taylor!"
@@ -43,7 +43,7 @@ Hello there, John
 ### Question 3
 
 What’s the output of this code if number equals 10?
-```
+```py
 if number > 11: 
   print(0)
 elif number != 10:
@@ -66,7 +66,7 @@ Output:
 
 Is "A dog" smaller or larger than "A mouse"? Is 9999+8888 smaller or larger than 100*100? Replace the plus sign in the following code to let Python check it for you and then answer.
 
-```
+```py
 print(len("A dog") > len("A mouse"))
 print(9999+8888 > 100*100)
 ```
@@ -82,7 +82,7 @@ print(9999+8888 > 100*100)
 
 If a filesystem has a block size of 4096 bytes, this means that a file comprised of only one byte will still use 4096 bytes of storage. A file made up of 4097 bytes will use 4096*2=8192 bytes of storage. Knowing this, can you fill in the gaps in the calculate_storage function below, which calculates the total number of bytes needed to store a file of a given size?
 
-```
+```py
 def calculate_storage(filesize):
     block_size = 4096
     # Use floor division to calculate how many blocks are fully occupied

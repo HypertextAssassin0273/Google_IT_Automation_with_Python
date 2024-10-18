@@ -44,7 +44,7 @@ Having a plan is half the battle. When planning out your program, why is it ofte
 
 It’s important to know why we’ve written a function. In the example used in the video (shown here), what is the purpose of “if len(users) > 0:” ?
 
-```
+```py
 def generate_report(machines):
   for machine, users in machines.items():
     if len(users) > 0:

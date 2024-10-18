@@ -35,7 +35,7 @@ Which of these activities are good use cases for recursive programs? Check all t
 
 Fill in the blanks to make the is_power_of function return whether the number is a power of the given base. Note: base is assumed to be a positive number. Tip: for functions that return a boolean value, you can return the result of a comparison.
 
-```
+```py
 def is_power_of(number, base):
   # Base case: when number is smaller than base.
   if number < base:
@@ -64,7 +64,7 @@ False
 
 The count_users function recursively counts the amount of users that belong to a group in the company system, by going through each of the members of a group and if one of them is a group, recursively calling the function and counting the members. But it has a bug! Can you spot the problem and fix it?
 
-```
+```py
 def count_users(group):
   count = 0
   for member in get_members(group):
@@ -93,7 +93,7 @@ Output:
 
 Implement the sum_positive_numbers function, as a recursive function that returns the sum of all positive numbers between the number n received and 1. For example, when n is 3 it should return 1+2+3=6, and when n is 5 it should return 1+2+3+4+5=15.
 
-```
+```py
 def sum_positive_numbers(n):
   if n == 0:
     return n

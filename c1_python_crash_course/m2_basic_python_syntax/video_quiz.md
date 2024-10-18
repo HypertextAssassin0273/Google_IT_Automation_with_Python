@@ -6,7 +6,7 @@
 
 Why does this code raise an error:
 
-```
+```py
 print("1234"+5678)
 ```
 
@@ -23,7 +23,7 @@ print("1234"+5678)
 
 Fill in the blanks to calculate the area of a triangle of base 5, height 3 and output the result. **Reminder**: the area of a triangle is (base*height)/2.
 
-```
+```py
 base = 5
 height = 3
 area = (base*height)/2
@@ -43,7 +43,7 @@ Output:
 
 In this scenario, we have a directory with 5 files in it. Each file has a different size: 2048, 4357, 97658, 125, and 8. Fill in the blanks to calculate the average file size by having Python add all the values for you, and then set the files variable to the number of files. Finally, output a message saying "The average size is: " followed by the resulting number. Remember to use the str() function to convert the number into a string. 
 
-```
+```py
 total = 2048 + 4357 + 97658 + 125 + 8
 files =5
 average = total / files
@@ -66,7 +66,7 @@ The average size is: 20839.2
 
 Flesh out the body of the print_seconds function so that it prints the total amount of seconds given the hours, minutes, and seconds function parameters. Remember that there are 3600 seconds in an hour and 60 seconds in a minute.
 
-```
+```py
 def print_seconds(hours, minutes, seconds):
     print(hours*3600 + minutes*60 + seconds)
 
@@ -85,7 +85,7 @@ Output:
 
 Use the get_seconds function to work out the amount of seconds in 2 hours and 30 minutes, then add this number to the amount of seconds in 45 minutes and 15 seconds. Then print the result.
 
-```
+```py
 def get_seconds(hours, minutes, seconds):
   return 3600*hours + 60*minutes + seconds
 
@@ -107,7 +107,7 @@ Output:
 
 In this code, identify the repeated pattern and replace it with a function called month_days, that receives the name of the month and the number of days in that month as parameters. Adapt the rest of the code so that the result is the same. Confirm your results by making a function call with the correct parameters for both months listed.
 
-```
+```py
 def month_days(month, days):
     return f"{month} has {days} days."
     
@@ -128,7 +128,7 @@ July has 31 days.
 
 This function to calculate the area of a rectangle is not very readable. Can you refactor it, and then call the function to calculate the area with base of 5 and height of 6? Tip: a function that calculates the area of a rectangle should probably be called rectangle_area, and if it's receiving base and height, that's what the parameters should be called.
 
-```
+```py
 def rectangle_area(base, height):
 	area = base * height
 	return "The area is " + str(area)
@@ -152,7 +152,7 @@ The area is 50
 
 Figure out what's the relationship between the strings "cat" and "Cat" by replacing the plus sign with comparison operators.
 
-```
+```py
 print("cat" > "Cat")
 ```
 
@@ -168,7 +168,7 @@ print("cat" > "Cat")
 
 The is_positive function should return True if the number received is positive, otherwise it returns None. Can you fill in the gaps to make that happen?
 
-```
+```py
 def is_positive(number):
   if number > 0:
     return True
@@ -189,7 +189,7 @@ is_positive(13) returned True
 
 The is_positive function should return True if the number received is positive and False if it isn't. Can you fill in the gaps to make that happen?
 
-```
+```py
 def is_positive(number):
   if number > 0:
     return True
@@ -211,7 +211,7 @@ is_positive(13) returned True
 
 The number_group function should return "Positive" if the number received is positive, "Negative" if it's negative, and "Zero" if it's 0. Can you fill in the gaps to make that happen?
 
-```
+```py
 def number_group(number):
   if number > 0:
     return "Positive"

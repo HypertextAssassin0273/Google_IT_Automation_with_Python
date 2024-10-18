@@ -43,7 +43,7 @@ Using the terminal, which of the following commands will correctly use grep to f
 
 Fill in the code to check if the text passed contains the vowels a, e and i, with exactly one occurrence of any other character in between.
 
-```
+```py
 import re
 def check_aei (text):
   result = re.search(r"a.e.i", text)
@@ -68,7 +68,7 @@ True
 
 Fill in the code to check if the text passed contains punctuation symbols: commas, periods, colons, semicolons, question marks, and exclamation points.
 
-```
+```py
 import re
 def check_punctuation (text):
   result = re.search(r"[,.:;?!]", text)
@@ -97,7 +97,7 @@ False
 
 The repeating_letter_a function checks if the text passed includes the letter "a" (lowercase or uppercase) at least twice. For example, repeating_letter_a("banana") is True, while repeating_letter_a("pineapple") is False. Fill in the code to make this work. 
 
-```
+```py
 import re
 def repeating_letter_a(text):
   result = re.search(r"[Aa].*[Aa]", text)
@@ -124,7 +124,7 @@ True
 
 Fill in the code to check if the text passed has at least 2 groups of alphanumeric characters (including letters, numbers, and underscores) separated by one or more whitespace characters.
 
-```
+```py
 import re
 def check_character_groups(text):
   result = re.search(r"\w+\s+\w+", text)
@@ -151,7 +151,7 @@ False
 
 Fill in the code to check if the text passed looks like a standard sentence, meaning that it starts with an uppercase letter, followed by at least some lowercase letters or a space, and ends with a period, question mark, or exclamation point. 
 
-```
+```py
 import re
 def check_sentence(text):
   result = re.search(r"^[A-Z][a-z ]+[.?!]$", text)
@@ -184,7 +184,7 @@ True
 
 Fix the regular expression used in the rearrange_name function so that it can match middle names, middle initials, as well as double surnames.
 
-```
+```py
 import re
 def rearrange_name(name):
   result = re.search(r'^([\w \.-]*), ([\w \.-]*)', name)
@@ -208,7 +208,7 @@ John F. Kennedy
 
 The long_words function returns all words that are at least 7 characters. Fill in the regular expression to complete this function.
 
-```
+```py
 import re
 def long_words(text):
   pattern = r'\w{7,}'
@@ -234,7 +234,7 @@ Output:
 
 Add to the regular expression used in the extract_pid function, to return the uppercase message in parenthesis, after the process id.
 
-```
+```py
 import re
 def extract_pid(log_line):
     regex = r"\[(\d+)\]: (\w+)"
@@ -264,7 +264,7 @@ None
 
 We want to split a piece of text by either the word "a" or "the", as implemented in the following code. What is the resulting split list?
 
-```
+```py
 re.split(r"the|a", "One sentence. Another one? And the last one!")
 ```
 

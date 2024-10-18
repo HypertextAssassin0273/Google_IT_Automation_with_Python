@@ -8,7 +8,7 @@
 
 We're working with a CSV file, which contains employee information. Each record has a name field, followed by a phone number field, and a role field. The phone number field contains U.S. phone numbers, and needs to be modified to the international format, with "+1-" in front of the phone number. Fill in the regular expression, using groups, to use the transform_record function to do that.
 
-```
+```py
 import re
 def transform_record(record):
   new_record = re.sub(r",(\d{3})",r",+1-\1",record)
@@ -42,7 +42,7 @@ Charlie Rivera,+1-698-746-3357,Web Developer
 
 The multi_vowel_words function returns all words with 3 or more consecutive vowels (a, e, i, o, u). Fill in the regular expression to do that.
 
-```
+```py
 import re
 def multi_vowel_words(text):
   pattern = r'\w+[aiueo]{3,}\w+'
@@ -94,7 +94,7 @@ When capturing regex groups, what datatype does the groups method return?
 
 The transform_comments function converts comments in a Python script into those usable by a C compiler. This means looking for text that begins with a hash mark (#) and replacing it with double slashes (//), which is the C single-line comment indicator. For the purpose of this exercise, we'll ignore the possibility of a hash mark embedded inside of a Python command, and assume that it's only used to indicate a comment. We also want to treat repetitive hash marks (###), (####), etc., as a single comment indicator, to be replaced with just (//) and not (#//) or (//#). Fill in the parameters of the substitution method to complete this function:
 
-```
+```py
 import re
 def transform_comments(line_of_code):
   result = re.sub(r'#+', r'//', line_of_code)
@@ -125,7 +125,7 @@ Output:
 
 The convert_phone_number function checks for a U.S. phone number format: XXX-XXX-XXXX (3 digits followed by a dash, 3 more digits followed by a dash, and 4 digits), and converts it to a more formal format that looks like this: (XXX) XXX-XXXX. Fill in the regular expression to complete this function.
 
-```
+```py
 import re
 def convert_phone_number(phone):
   result = re.sub(r"\b(\d{3})-(\d{3})-(\d{4})\b", r"(\1) \2-\3", phone)

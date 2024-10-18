@@ -13,7 +13,7 @@ This function converts miles to kilometers (km).
 3. Fill in the blank to print the result of the conversion
 4. Calculate the round-trip in kilometers by doubling the result, and fill in the blank to print the result
 
-```
+```py
 # 1) Complete the function to return the result of the conversion
 def convert_distance(miles):
 	return miles * 1.6  # approximately 1.6 km in 1 mile
@@ -48,7 +48,7 @@ This function compares two numbers and returns them in increasing order.
 
 Hint: if a function returns multiple values, don't forget to store these values in multiple variables
 
-```
+```py
 # This function compares two numbers and returns them
 # in increasing order.
 def order_numbers(number1, number2):
@@ -88,7 +88,7 @@ What are the values passed into functions as input called?
 
 Let's revisit our lucky_number function. We want to change it, so that instead of printing the message, it returns the message. This way, the calling line can print the message, or do something else with it if needed. Fill in the blanks to complete the code to make it work.
 
-```
+```py
 def lucky_number(name):
   number = len(name) * 9
   greet = "Hello " + name + ". Your lucky number is " + str(number)

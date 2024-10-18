@@ -8,7 +8,7 @@
 
 The email_list function receives a dictionary, which contains domain names as keys, and a list of users as values. Fill in the blanks to generate a list that contains complete email addresses (e.g. diana.prince@gmail.com).
 
-```
+```py
 def email_list(domains):
 	emails = []
 	for domain, users in domains.items():
@@ -31,7 +31,7 @@ Output:
 
 The groups_per_user function receives a dictionary, which contains group names with the list of users. Users can belong to multiple groups. Fill in the blanks to return a dictionary with the users as keys and a list of their groups as values.
 
-```
+```py
 def groups_per_user(group_dictionary):
 	user_groups = {}
 	# Go through group_dictionary
@@ -61,7 +61,7 @@ Output:
 
 The dict.update method updates one dictionary with the items coming from the other dictionary, so that existing entries are replaced and new entries are added. What is the content of the dictionary “wardrobe“ at the end of the following code?
 
-```
+```py
 wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
 new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
 wardrobe.update(new_items)
@@ -92,7 +92,7 @@ What’s a major advantage of using dictionaries over lists?
 
 The add_prices function returns the total price of all of the groceries in the dictionary. Fill in the blanks to complete this function.
 
-```
+```py
 def add_prices(basket):
 	# Initialize the variable that will be used for the calculation
 	total = 0

@@ -4,7 +4,7 @@
 
 ### Video: What is a while loop?
 
-```
+```py
 x = 0
 while x < 5:
   print("Not there yet, x=" + str(x))
@@ -22,7 +22,7 @@ How many times will "Not there yet" be printed?
 
 Can you work out what this function does? Try passing different parameters to the attempts function to see what it does. 
 
-```
+```py
 def attempts(n):
     x = 1
     while x <= n:
@@ -48,7 +48,7 @@ Done
 
 In this code, there's an initialization problem that's causing our function to behave incorrectly. Can you find the problem and fix it?
 
-```
+```py
 def count_down(start_number):
   current = start_number
   while (current > 0):
@@ -74,7 +74,7 @@ Zero!
 
 The following code causes an infinite loop. Can you figure out what’s missing and how to fix it?
 
-```
+```py
 def print_range(start, end):
 	# Loop through the numbers from start to end
 	n = start
@@ -105,7 +105,7 @@ Output:
 
 Fill in the gaps of the sum_squares function, so that it returns the sum of all the squares of numbers between 0 and x (not included). Remember that you can use the range(x) function to generate a sequence of numbers from 0 to x (not included).
 
-```
+```py
 def square(n):
     return n*n
 
@@ -130,7 +130,7 @@ Output:
 
 In math, the factorial of a number is defined as the product of an integer and all the integers below it. For example, the factorial of four (4!) is equal to 1\*2\*3\*4=24. Fill in the blanks to make the factorial function return the right number.
 
-```
+```py
 def factorial(n):
     result = 1
     for i in range(1, n+1):
@@ -154,7 +154,7 @@ Output:
 
 Given the following code:
 
-```
+```py
 teams = [ 'Dragons', 'Wolves', 'Pandas', 'Unicorns']
 for home_team in teams:
     for away_team in teams:
@@ -175,7 +175,7 @@ What should the next line be to avoid both variables being printed with the same
 
 The validate_users function is used by the system to check if a list of users is valid or invalid. A valid user is one that is at least 3 characters long. For example, ['taylor', 'luisa', 'jamaal'] are all valid users. When calling it like in this example, something is not right. Can you figure out what to fix?
 
-```
+```py
 def validate_users(users):
   if len(users) > 3:
     print(users + " is valid")
@@ -199,7 +199,7 @@ purplecat is valid
 
 The function sum_positive_numbers should return the sum of all positive numbers between the number n received and 1. For example, when n is 3 it should return 1+2+3=6, and when n is 5 it should return 1+2+3+4+5=15. Fill in the gaps to make this work:
 
-```
+```py
 def sum_positive_numbers(n):
     # The base case is n being smaller than 1
     if n < 1:

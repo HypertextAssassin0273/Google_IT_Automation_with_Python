@@ -44,7 +44,7 @@ What does the print function do in Python?
 
 Output a message that says "Programming in Python is fun!" to the screen.
 
-```
+```py
 print("Programming in Python is fun!")
 ```
 
@@ -56,7 +56,7 @@ print("Programming in Python is fun!")
 
 Replace the ___ placeholder and calculate the Golden ratio: $\frac{1+\sqrt{5}}{2}$
 
-```
+```py
 ratio = (1 + 5**.5) / 2
 print(ratio)
 ```

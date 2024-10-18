@@ -21,7 +21,7 @@ What are while loops in Python?
 
 Fill in the blanks to make the print_prime_factors function print all the prime factors of a number. A prime factor is a number that is prime and divides another without a remainder.
 
-```
+```py
 def print_prime_factors(number):
   # Start with two, which is the first prime
   factor = 2
@@ -57,7 +57,7 @@ The following code can lead to an infinite loop. Fix the code so that it can fin
 
 Note: Try running your function with the number 0 as the input, and see what you get!
 
-```
+```py
 def is_power_of_two(n):
   # Check if the number can be divided by two without a remainder
   while n % 2 == 0 and n != 0:
@@ -88,7 +88,7 @@ False
 
 Fill in the empty function so that it returns the sum of all the divisors of a number, without including it. A divisor is a number that divides into another without a remainder.
 
-```
+```py
 def sum_divisors(n):
   sum, num = 0, 1
   while num < n:
@@ -125,7 +125,7 @@ Output:
 
 The multiplication_table function prints the results of a number passed to it multiplied by 1 through 5. An additional requirement is that the result is not to exceed 25, which is done with the break statement. Fill in the blanks to complete the function to satisfy these conditions.
 
-```
+```py
 def multiplication_table(number):
 	# Initialize the starting point of the multiplication table
 	multiplier = 1

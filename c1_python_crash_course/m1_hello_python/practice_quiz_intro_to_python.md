@@ -8,7 +8,7 @@
 
 Fill in the correct Python command to put "My first Python program" onto the screen.
 
-```
+```py
 print("My first Python program")
 ```
 
@@ -36,7 +36,8 @@ Python is an example of what type of programming language?
 ### Question 3
 
 Convert this Bash command into Python:
-```
+
+```py
 # echo Have a nice day
 print('Have a nice day')
 ```
@@ -53,7 +54,7 @@ Have a nice day
 
 Fill in the correct Python commands to put "This is fun!" onto the screen 5 times.
 
-```
+```py
 for i in range(5):
   print("This is fun!")
 ```
@@ -74,12 +75,12 @@ This is fun!
 
 Select the Python code snippet that corresponds to the following Javascript snippet:
 
-```
+```js
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
-```
+```py
 for i in range(10):
   print(i)
 ```

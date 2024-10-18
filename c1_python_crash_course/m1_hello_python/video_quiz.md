@@ -51,7 +51,7 @@ Which of the following tasks do you think are good candidates for automation? Ch
 
 Execute the following code and see what happens. Feel free to change it and run it as many times as you want.
 
-```
+```py
 friends = ['Taylor', 'Alex', 'Pat', 'Eli']
 for friend in friends:
     print("Hi " + friend)
@@ -92,7 +92,7 @@ Here's how printing "Hello, World" 10 times looks in Bash and Powershell:
 
 **Bash:**
 
-```
+```bash
 for i in {1..10}; do
   echo Hello, World!
 done
@@ -100,7 +100,7 @@ done
 
 **Powershell:**
 
-```
+```shell
 for ($i=1; $i -le 10; $i++) { 
   Write-Host "Hello, World!"
 }
@@ -108,7 +108,7 @@ for ($i=1; $i -le 10; $i++) {
 
 Now try out the Python example yourself:
 
-```
+```py
 for i in range(10):
   print("Hello, World!")
 ```
@@ -138,7 +138,7 @@ Hello, World!
 
 Write a Python script that outputs "I'm programming in Python!" to the screen. Remember that you need to use the print() function and use quotation marks to delimiter the string.
 
-```
+```py
 print("I'm programming in Python!")
 ```
 
@@ -154,7 +154,7 @@ I'm programming in Python!
 
 In the following script, change the values of color and thing to have the computer output a different statement than the initial one.
 
-```
+```py
 color = "Blue"
 thing = "Sky"
 print(color + " is the color of " + thing)
@@ -174,7 +174,7 @@ Use Python to calculate (((1+2)*3)/4)<sup>5</sup>
 
 **Tip**: remember that you can use a**b to calculate a to the power of b. 
 
-```
+```py
 print((((1+2)*3)/4)**5)
 ```
 

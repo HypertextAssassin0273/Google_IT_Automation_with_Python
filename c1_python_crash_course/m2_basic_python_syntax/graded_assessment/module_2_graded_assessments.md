@@ -8,7 +8,7 @@
 
 Complete the function by filling in the missing parts. The color_translator function receives the name of a color, then prints its hexadecimal value. Currently, it only supports the three additive primary colors (red, green, blue), so it returns "unknown" for all other colors.
 
-```
+```py
 def color_translator(color):
 	if color == "red":
 		hex_color = "#ff0000"
@@ -69,7 +69,7 @@ What is the elif keyword used for?
 
 Students in a class receive their grades as Pass/Fail. Scores of 60 or more (out of 100) mean that the grade is "Pass". For lower scores, the grade is "Fail". In addition, scores above 95 (not included) are graded as "Top Score". Fill in this function so that it returns the proper grade.
 
-```
+```py
 def exam_grade(score):
 	if score > 95:
 		grade = "Top Score"
@@ -122,7 +122,7 @@ Specifically:
 * If only one name parameter is supplied (either the first name or the last name)
 * Finally, if both names are blank, the function should return the empty string
 
-```
+```py
 def format_name(first_name, last_name):
 	# code goes here
 	string = 'Name: ' + ', '.join([name for name in [last_name, first_name] if name]) if any([last_name, first_name]) else ''
@@ -155,7 +155,7 @@ Name: Voltaire
 
 The longest_word function is used to compare 3 words. It should return the word with the most number of characters (and the first in the list when they have the same length). Fill in the blank to make this happen.
 
-```
+```py
 def longest_word(word1, word2, word3):
 	if len(word1) >= len(word2) and len(word1) >= len(word3):
 		word = word1
@@ -185,7 +185,7 @@ notebook
 
 What’s the output of this code?
 
-```
+```py
 def sum(x, y):
 		return(x+y)
 print(sum(sum(1,2), sum(3,4)))
@@ -218,7 +218,7 @@ What's the value of this Python expression?
 
 The fractional_part function divides the numerator by the denominator, and returns just the fractional part (a number between 0 and 1). Complete the body of the function so that it returns the right number. Note: Since division by 0 produces an error, if the denominator is 0, the function should return 0 instead of attempting the division.
 
-```
+```py
 def fractional_part(numerator, denominator):
 	# Operate with numerator and denominator to 
 	# keep just the fractional part of the quotient

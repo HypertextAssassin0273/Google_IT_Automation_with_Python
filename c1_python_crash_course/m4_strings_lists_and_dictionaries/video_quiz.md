@@ -6,7 +6,7 @@
 
 Modify the double_word function so that it returns the same word repeated twice, followed by the length of the new doubled word. For example, double_word("hello") should return hellohello10.
 
-```
+```py
 def double_word(word):
     return word*2 + str(len(word)*2)
 
@@ -29,7 +29,7 @@ abcabc6
 
 Want to give it a go yourself? Be my guest! Modify the first_and_last function so that it returns True if the first letter of the string is the same as the last letter of the string, False if they’re different. Remember that you can access characters using message[0] or message[-1]. Be careful how you handle the empty string, which should return True since nothing is equal to nothing.
 
-```
+```py
 def first_and_last(message):
     return message[0] == message[-1] if message else True
 
@@ -52,7 +52,7 @@ True
 
 Using the index method, find out the position of "x" in "supercalifragilisticexpialidocious". 
 
-```
+```py
 word = "supercalifragilisticexpialidocious"
 print(word.index('x'))
 ```
@@ -69,7 +69,7 @@ Output:
 
 Fill in the gaps in the initials function so that it returns the initials of the words contained in the phrase received, in upper case. For example: "Universal Serial Bus" should return "USB"; "local area network" should return "LAN”. 
 
-```
+```py
 def initials(phrase):
     words = phrase.split()
     result = ""
@@ -96,7 +96,7 @@ OS
 
 Modify the student_grade function using the format method, so that it returns the phrase "X received Y% on the exam". For example, student_grade("Reed", 80) should return "Reed received 80% on the exam".
 
-```
+```py
 def student_grade(name, grade):
 	return f"{name} received {grade}% on the exam"
 
@@ -123,7 +123,7 @@ Jesse received 85% on the exam
 
 Using the "split" string method from the preceding lesson, complete the get_word function to return the {n}th word from a passed sentence. For example, get_word("This is a lesson about lists", 4) should return "lesson", which is the 4th word in this sentence. Hint: remember that list indexes start at 0, not 1. 
 
-```
+```py
 def get_word(sentence, n):
 	# Only proceed if n is positive 
 	if n > 0:
@@ -154,7 +154,7 @@ Nothing
 
 The skip_elements function returns a list containing every other element from an input list, starting with the first element. Complete this function to do that, using the for loop to iterate through the input list.
 
-```
+```py
 def skip_elements(elements):
 	# Initialize variables
 	new_list = []
@@ -190,7 +190,7 @@ Output:
 
 Let's use tuples to store information about a file: its name, its type and its size in bytes. Fill in the gaps in this code to return the size in kilobytes (a kilobyte is 1024 bytes) up to 2 decimal places. 
 
-```
+```py
 def file_size(file_info):
 	name, type, size= file_info
 	return("{:.2f}".format(size / 1024))
@@ -214,7 +214,7 @@ Output:
 
 Try out the enumerate function for yourself in this quick exercise. Complete the skip_elements function to return every other element from the list, this time using the enumerate function to check if an element is on an even position or an odd position.
 
-```
+```py
 def skip_elements(elements):
 	new_list = []
 	for idx, ele in enumerate(elements):
@@ -240,7 +240,7 @@ Output:
 
 The odd_numbers function returns a list of odd numbers between 1 and n, inclusively. Fill in the blanks in the function, using list comprehension. Hint: remember that list and range counters start at 0 and end at the limit minus 1.
 
-```
+```py
 def odd_numbers(n):
 	return [x for x in range(1, n+1) if x % 2]
 
@@ -271,7 +271,7 @@ Output:
 
 The "toc" dictionary represents the table of contents for a book. Fill in the blanks to do the following: 1) Add an entry for Epilogue on page 39. 2) Change the page number for Chapter 3 to 24. 3) Display the new dictionary contents. 4) Display True if there is Chapter 5, False if there isn't.
 
-```
+```py
 toc = {"Introduction":1, "Chapter 1":4, "Chapter 2":11, "Chapter 3":25, "Chapter 4":30}
 toc['Epilogue'] = 39 # Epilogue starts on page 39
 toc['Chapter 3'] = 24 # Chapter 3 now starts on page 24
@@ -292,7 +292,7 @@ False
 
 Complete the code to iterate through the keys and values of the cool_beasts dictionary. Remember that the items method returns a tuple of key, value for each element in the dictionary. 
 
-```
+```py
 cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
 for key, value in cool_beasts.items():
     print("{} have {}".format(key, value))
@@ -312,7 +312,7 @@ rhinos have horns
 
 In Python, a dictionary can only hold a single value for a given key. To workaround this, our single value can be a list containing multiple values. Here we have a dictionary called "wardrobe" with items of clothing and their colors. Fill in the blanks to print a line for each item of clothing with each color, for example: "red shirt", "blue shirt", and so on.
 
-```
+```py
 wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
 for clothing, colors in wardrobe.items():
 	for color in colors:

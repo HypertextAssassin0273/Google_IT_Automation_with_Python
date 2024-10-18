@@ -71,7 +71,7 @@ How can we check if a file exists inside a Python script?
 
 Some more functions of the os.path module include getsize() and isfile() which get information on the file size and determine if a file exists, respectively. In the following code snippet, what do you think will print if the file does not exist?
 
-```
+```py
 import os
 file= "file.dat"
 if os.path.isfile(file):
