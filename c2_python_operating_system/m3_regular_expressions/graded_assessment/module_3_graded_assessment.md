@@ -91,7 +91,7 @@ def find_productID(report):
   
 print(find_productID("Products 1234-AB-30 and 2234-AB-30, not items 12-AB-30 or 12345-AB-30")) # Should return ['1234-AB-30']
 print(find_productID("Products of interest are 1234-AB-30, 1678-XZ-11, and 1561-CD-57. We're not interested in other products like 2345-AB-29.")) # Should return ['1234-AB-30', '1678-XZ-11', '1561-CD-57']
-````
+```
 
 Output:
 ```
@@ -130,7 +130,6 @@ What is the purpose of initializing the `old_domain_email_list` in the code from
 
 Why is it considered good practice to use the `close()` method to close a file after processing it in Python?
 
-
 - To ensure the file remains open for other processes to access.
 - **To free up system resources and prevent further reading or writing to the file**
 - To permanently delete the file from the system
@@ -140,7 +139,6 @@ Why is it considered good practice to use the `close()` method to close a file a
 
 What is a key benefit of using Python for creating reports and employing regular expressions?
 
-
 - **To automate repetitive tasks and data analysis.**
 - To optimize website performance.
 -  To develop virtual reality applications.
@@ -148,9 +146,7 @@ What is a key benefit of using Python for creating reports and employing regular
 
 ### Question 10
 
-Question 10
 In the Python script for processing `user_emails.csv`, what is the purpose of the `contains_domain` function?
-
 
 - To count the number of email addresses in the CSV file
 - **To check if an email address belongs to a specific domain, using Regular Expressions (RegEx)**
