@@ -47,7 +47,7 @@ Where are the command line arguments stored?
 
 * argv
 * **sys**
-* parameters&#46;py
+* parameters.py
 * print
 
 > The list of arguments are stored in the sys module.
