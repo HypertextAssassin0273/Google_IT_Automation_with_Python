@@ -3,6 +3,9 @@ import math
 def triangle(base, height):
     return base * height / 2
 
+def square(side):
+    return side ** 2
+
 def rectangle(width, height):
     return width * height
 
