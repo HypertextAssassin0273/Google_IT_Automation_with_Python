@@ -12,3 +12,6 @@ result = subprocess.run(["myapp"], env=my_env)
 # 2) create a copy of the current environment variables
 # 3) update the PATH environment variable to include the path to our custom application
 # 4) finally, run the custom application using the updated environment variables
+
+
+# note: the above script is for demonstration purposes only and may not work as expected on your system
