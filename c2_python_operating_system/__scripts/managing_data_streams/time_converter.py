@@ -16,3 +16,5 @@ while(choice.lower() == "y"):
     choice = input("Do you want to do another conversion? [y to continue] ")
     
 print("Goodbye!")
+
+# note: the script demonstrates the use of continuous 'user interaction'
