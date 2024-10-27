@@ -12,6 +12,4 @@ def circle(radius):
 def doughnut(outer_radius, inner_radius):
     return circle(outer_radius) - circle(inner_radius)
 
-# notes:
-# 1)  this is a file to be used as a module
-# 2)  such files do not contain any executable code (i.e. only definitions, classes, functions, etc)
+# note: a 'module' file only contains non-executable statements & definitions
