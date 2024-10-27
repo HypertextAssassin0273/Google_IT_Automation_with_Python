@@ -4,7 +4,7 @@ import sys, re
 
 logfile = sys.argv[1]
 with open(logfile) as file:
-    pattern = r"CRON.+USER \((.+)\)$" 
+    pattern = r"CRON.+USER \((.+)\)$"
     for line in file:
         result = re.search(pattern, line)
         if result is not None:
