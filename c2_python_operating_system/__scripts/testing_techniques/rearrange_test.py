@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-from rearrage import rearrange_name
 import unittest
+from rearrange import rearrange_name
 
-class TestRearrage(unittest.TestCase):
+class TestRearrange(unittest.TestCase):
     def test_basic(self):
         testcase = 'Lovelace, Ada'
         expected = 'Ada Lovelace'
@@ -24,4 +24,4 @@ class TestRearrage(unittest.TestCase):
         expected = 'Voltaire'
         self.assertEqual(rearrange_name(testcase), expected)
 
-unittest.main()
+unittest.main() # run the tests directly

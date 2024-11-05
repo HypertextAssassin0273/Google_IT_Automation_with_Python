@@ -8,4 +8,4 @@ def rearrange_name(name):
         # return result
         # return ""
         return name
-    return '{} {}'.format(result[2], result[1])
+    return f'{result[2]} {result[1]}'
