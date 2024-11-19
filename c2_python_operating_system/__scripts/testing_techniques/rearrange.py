@@ -4,8 +4,4 @@ import re
 
 def rearrange_name(name):
     result = re.search(r'^([\w .]*), ([\w .]*)$', name)
-    if result == None:
-        # return result
-        # return ""
-        return name
-    return f'{result[2]} {result[1]}'
+    return name if result == None else f'{result[2]} {result[1]}'
