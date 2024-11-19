@@ -1,2 +1,2 @@
-10
-0
+10 apples
+20 people

@@ -28,7 +28,8 @@ def enhanced_read_and_divide(filename):
 
 # test function:
 if __name__ == "__main__":
-    print(enhanced_read_and_divide("data.txt"))
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-1.txt"))
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-2.txt"))
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-3.txt"))
+    print(enhanced_read_and_divide("data.txt")) 							# FileNotFoundError
+    print(enhanced_read_and_divide("../../__assets/div_inputs/case-1.txt")) # ValueError
+    print(enhanced_read_and_divide("../../__assets/div_inputs/case-2.txt")) # ValueError
+    print(enhanced_read_and_divide("../../__assets/div_inputs/case-3.txt")) # ZeroDivisionError
+    print(enhanced_read_and_divide("../../__assets/div_inputs/case-4.txt")) # 10/2 = 5.0 [Success]
