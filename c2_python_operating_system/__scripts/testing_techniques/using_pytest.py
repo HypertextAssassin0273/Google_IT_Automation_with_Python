@@ -1,4 +1,4 @@
-import pytest # external library for testing
+import pytest # type: ignore (for suppressing import warning), external library for testing
 from typing import List # for type hinting
 
 class Fruit:
@@ -20,7 +20,7 @@ class FruitSalad:
             fruit.cube()
 
 
-# Arrange (setup) and Act (execution) steps:
+# Arrange (setup), Act (execution) and Assert (verification) pattern:
 @pytest.fixture
 def fruit_bowl(): # arrange
     return [Fruit('apple'), Fruit('banana')]
@@ -36,3 +36,4 @@ def test_fruit_salad(fruit_bowl):
 # 1) a 'fixture' is a function that establishes a fixed baseline for tests
 #    by initializing data & preparing the testing environment
 # 2) any function name starting with 'test_' will be considered as a test function
+# 3) running pytest with shell command is the easiest way to run its tests (in any environment)
