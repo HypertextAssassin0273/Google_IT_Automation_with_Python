@@ -20,8 +20,11 @@ if __name__ == '__main__': # execute only if it's run as a standalone program
     except IndexError: # if no command line argument is provided
         print("Usage: char_freq.py <filename>")
 
-    except OSError: # if file not found
+    except FileNotFoundError: # OR OSError, if file not found
         print(f"Error: {filename} not found!")
+    
+    finally: # this block get always executed (irrespective of exception)
+        print("<<<END>>>")
 
 
 # side-note: in order to use 'Exception' class, it needs to be derived from base class (as pre-req)

@@ -13,14 +13,15 @@ def validate_user(username, minlen):
     return True
 
 
-# test-cases:
-try:
-    validate_user("", -1)         # fail
-    # validate_user("", 1)          # pass
-    # validate_user("myuser", 1)    # pass
-    # validate_user(88, 1)          # fail
-    # validate_user([], 1)          # fail
-    # validate_user(["name"], 1)    # fail
+# test-cases (manual testing):
+if __name__ == "__main__":
+    try:
+        validate_user("", -1)         # fail
+        # validate_user("", 1)          # pass
+        # validate_user("myuser", 1)    # pass
+        # validate_user(88, 1)          # fail
+        # validate_user([], 1)          # fail
+        # validate_user(["name"], 1)    # fail
 
-except Exception as e: # catches all exceptions
-    print(e)
+    except Exception as e: # catches all exceptions
+        print(e)
