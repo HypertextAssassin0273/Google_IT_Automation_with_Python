@@ -11,7 +11,8 @@ def character_frequency(filename):
                 frequency[char] = frequency.get(char, 0) + 1 # error handling
         return frequency
 
-# Test the function
+
+# test the function:
 if __name__ == '__main__': # execute only if it's run as a standalone program
     try:
         filename = sys.argv[1]
@@ -27,4 +28,4 @@ if __name__ == '__main__': # execute only if it's run as a standalone program
         print("<<<END>>>")
 
 
-# side-note: in order to use 'Exception' class, it needs to be derived from base class (as pre-req)
+# SIDE-NOTE: in order to use 'Exception' class, it needs to be derived from base class (as pre-req)

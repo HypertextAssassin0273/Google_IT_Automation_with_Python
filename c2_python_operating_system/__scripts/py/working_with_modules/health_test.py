@@ -20,7 +20,7 @@ else:
     print("Network Checks Failed!")
 
 
-# one good example of 'when to use' an 'automatation script' can be:
+# NOTE: one good example of 'when to use' an 'automatation script' can be,
 # "to detect dangerously high CPU usage levels across a network
 # and scale back the CPU clock speeds of those devices,
 # or shut them down to prevent overheating."

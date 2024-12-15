@@ -30,9 +30,9 @@ def test_fruit_salad(fruit_bowl):
     assert all(fruit.cubed for fruit in fruit_salad.fruits) # assert
 
 
-# note: %%file -> cell magic command for saving the cell content to a file
+# NOTE: %%file -> cell magic command for saving the cell content to a file
 
-# side-notes (for pytest):
+# SIDE-NOTES (for pytest):
 # 1) a 'fixture' is a function that establishes a fixed baseline for tests
 #    by initializing data & preparing the testing environment
 # 2) any function name starting with 'test_' will be considered as a test function

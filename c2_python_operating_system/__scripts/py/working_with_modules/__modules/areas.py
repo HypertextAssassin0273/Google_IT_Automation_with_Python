@@ -15,4 +15,5 @@ def circle(radius):
 def doughnut(outer_radius, inner_radius):
     return circle(outer_radius) - circle(inner_radius)
 
-# note: a 'module' file only contains non-executable statements & definitions
+
+# NOTE: a 'module' file only contains non-executable statements & definitions

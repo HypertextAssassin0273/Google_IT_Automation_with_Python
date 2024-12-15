@@ -15,4 +15,5 @@ with open(logfile) as file:
 
 print(usernames)
 
-# usage: ./check_cron_user.py ../../__assets/syslog
+
+# USAGE: ./check_cron_user.py ../../../__assets/syslog

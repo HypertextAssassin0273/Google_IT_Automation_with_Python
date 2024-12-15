@@ -15,6 +15,7 @@ if os.path.exists(filename):
 with open(filename, "w") as file:
     file.write("New file created\n")
 
-# side-note: to see the exit code of the last command in shell, use 'echo $?'
 
-# usage: ./create_file.py <filename>
+# SIDE-NOTE: to see the exit code of the last command in shell, use 'echo $?'
+
+# USAGE: ./create_file.py <filename>

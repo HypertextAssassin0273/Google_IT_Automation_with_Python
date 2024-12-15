@@ -14,4 +14,4 @@ result = subprocess.run(["myapp"], env=my_env)
 # 4) finally, run the custom application using the updated environment variables
 
 
-# note: the above script is for demonstration purposes only and may not work as expected on your system
+# NOTE: the above script is for demonstration purposes only and may not work as expected on your system

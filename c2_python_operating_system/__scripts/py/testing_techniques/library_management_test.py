@@ -16,6 +16,7 @@ class TestLibrary(unittest.TestCase):
         # Assert
         self.assertTrue(library.has_book(new_book))
 
+
 # Running the test
 library_test_output = unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromTestCase(TestLibrary))
 print(library_test_output)

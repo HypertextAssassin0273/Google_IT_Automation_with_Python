@@ -17,5 +17,5 @@ class TestValidateUser(unittest.TestCase):
         self.assertRaises(ValueError, validate_user, "user", -1)
 
 
-# Run the tests
+# run the tests:
 unittest.main()

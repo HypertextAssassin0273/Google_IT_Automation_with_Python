@@ -17,4 +17,4 @@ while(choice.lower() == "y"):
     
 print("Goodbye!")
 
-# note: the script demonstrates the use of continuous 'user interaction'
+# NOTE: the script demonstrates the use of continuous 'user interaction'

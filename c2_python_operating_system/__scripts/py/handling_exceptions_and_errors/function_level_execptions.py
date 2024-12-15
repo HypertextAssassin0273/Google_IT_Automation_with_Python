@@ -26,10 +26,14 @@ def enhanced_read_and_divide(filename):
 	except ZeroDivisionError as zde:
 		return f"Division error: {zde}"
 
-# test function:
+
+# test the function:
 if __name__ == "__main__":
-    print(enhanced_read_and_divide("data.txt")) 							# FileNotFoundError
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-1.txt")) # ValueError
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-2.txt")) # ValueError
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-3.txt")) # ZeroDivisionError
-    print(enhanced_read_and_divide("../../__assets/div_inputs/case-4.txt")) # 10/2 = 5.0 [Success]
+    print(enhanced_read_and_divide("data.txt")) # FileNotFoundError
+    print(enhanced_read_and_divide("../../../__assets/div_inputs/case-1.txt")) # ValueError
+    print(enhanced_read_and_divide("../../../__assets/div_inputs/case-2.txt")) # ValueError
+    print(enhanced_read_and_divide("../../../__assets/div_inputs/case-3.txt")) # ZeroDivisionError
+    print(enhanced_read_and_divide("../../../__assets/div_inputs/case-4.txt")) # 10/2 = 5.0 [Success]
+
+
+# NOTE (for testing): script should be run from the same directory where it's located. Otherwise, provide full path for files.

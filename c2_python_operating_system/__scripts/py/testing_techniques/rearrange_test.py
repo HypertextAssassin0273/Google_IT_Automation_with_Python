@@ -24,4 +24,5 @@ class TestRearrange(unittest.TestCase): # inherit from unittest.TestCase
         expected = 'Voltaire'
         self.assertEqual(rearrange_name(testcase), expected)
 
+
 unittest.main() # run the tests directly
