@@ -1,4 +1,4 @@
 Traceback (most recent call last):
-  File "/mnt/c/Users/SHAHZAIB AHMED/OneDrive/Desktop/shared_work/Google_IT_Automation_with_Python/c2_python_operating_system/__assets/./../__scripts/for_bash_scripting/streams_err.py", line 5, in <module>
+  File "/mnt/c/Users/SHAHZAIB AHMED/OneDrive/Desktop/shared_work/Google_IT_Automation_with_Python/c2_python_operating_system/__assets/./../__scripts/py/for_bash_scripting/streams_err.py", line 5, in <module>
     raise ValueError("Now we generate an error to STDERR")
 ValueError: Now we generate an error to STDERR
