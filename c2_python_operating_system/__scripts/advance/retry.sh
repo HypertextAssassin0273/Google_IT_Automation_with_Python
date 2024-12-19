@@ -16,3 +16,4 @@ done
 
 # USAGE: ./retry.sh <command>
 # EXAMPLE: ./retry.sh ./random_exit.py
+# SIDE-NOTE: use 'echo $?' to see the exit status of last command
