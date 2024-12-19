@@ -95,6 +95,7 @@ While preparing to catch all “jane” lines and store them in a text file call
 - `cd ~/oldFiles.txt`
 
 ### Question 10
+
 Bash script allows three different iterative statements:, or “loops”. What is a “for” loop?
 
 - The execution of a set of instructions as long as the control condition remains false.
