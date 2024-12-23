@@ -1,4 +1,4 @@
-## Qwiklabs Assessment: Pushing Local Commits to Github
+## Ungraded Qwiklabs Assessment: Pushing Local Commits to Github
 
 For this project, you'll need to fork an existing repository, fix a bug in a script, push your commit to GitHub, and create a pull request with your commit.
 

@@ -1,4 +1,4 @@
-# Qwiklabs Assessment: Merging Branches in Git
+# Ungraded Qwiklabs Assessment: Merging Branches in Git
 
 ## Introduction
 
