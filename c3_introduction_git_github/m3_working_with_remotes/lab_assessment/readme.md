@@ -11,5 +11,5 @@ In this lab, you'll practice the basics of interacting with GitHub. You'll pract
 * Create snapshot/snapshots of the local repository
 * Push the snapshots to the master branch
 
-### Our dummy repo for lab
+### dummy repo for lab
 https://github.com/HypertextAssassin0273/googlelab-introducing-github
