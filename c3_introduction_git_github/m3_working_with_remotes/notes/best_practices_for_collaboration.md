@@ -16,11 +16,8 @@ To make the final merge of the feature branch easier, it makes sense to regularl
 ## 1:31 - 1:42
 If you need to maintain more than one version of a project at the same time, it's common practice to have the latest version of the project in the master branch and a stable version of the project on a separate branch.
 
-## 2:05 - 2:12
-Rebasing can help a lot with identifying bugs, but use it with caution. Whenever we do a rebase, we're rewriting the history of our branch.
-
-## 2:13 - 2:17 - 2:22
-The old commits get replaced with new commits, and they'll have completely different hash sums.
+## 2:05 - 2:12, 2:13 - 2:17 - 2:22
+Rebasing can help a lot with identifying bugs, but use it with caution. Whenever we do a rebase, we're rewriting the history of our branch. The old commits get replaced with new commits, and they'll have completely different hash sums.
 
 ## 2:31 - 2:42
 So as a general rule, you shouldn't rebase changes that have been pushed to remote repos. The Git server will automatically reject pushes that attempt to rewrite the history of the branch.
