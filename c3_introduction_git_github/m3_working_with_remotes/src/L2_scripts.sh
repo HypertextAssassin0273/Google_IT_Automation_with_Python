@@ -9,6 +9,6 @@ git fetch # copies the commits done in the remote repository to the remote branc
 
 # Video: Updating the Local Repository
 git pull # fetch the remote copy of the current branch and automatically try to merge it
-git remote show origin
+git remote show origin # get more information about our remote
 git checkout experimental # create a local branch
 git remote update # fetch the contents of all remote branches
