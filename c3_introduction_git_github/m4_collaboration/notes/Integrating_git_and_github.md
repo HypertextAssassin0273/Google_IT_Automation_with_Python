@@ -10,7 +10,7 @@ Install the Git CLI according to your operating system. When you push to a GitHu
 
 If you don’t want to enter your username and password every time, you can store them in a file called `.netrc` in your home directory, like this:
 
-```bash
+```
 machine GitHub.com
     login <my-username>
     password <my-password>
