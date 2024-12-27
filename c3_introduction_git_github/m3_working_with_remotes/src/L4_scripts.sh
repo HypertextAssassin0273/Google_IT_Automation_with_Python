@@ -1,4 +1,4 @@
-# Video: Rebasing your changes
+## Video: Rebasing your changes ##
 git checkout master # switch to master branch
 git pull # get the latest changes from the remote repository
 git log --graph --oneline --all # view the commits in log which we want to rebase
@@ -11,7 +11,7 @@ git push --delete origin refactor # delete the remote branch
 git branch -d refactor # delete the local branch
 git push # push the changes to the remote repository
 
-# Video: Another Rebasing example
+## Video: Another Rebasing example ##
 # NOTE: working on small changes, hence no need to create a new branch
 code all_checks.py # modify file
 git commit -a -m 'Add a simple network connectivity check'

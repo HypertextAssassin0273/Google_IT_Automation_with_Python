@@ -1,4 +1,4 @@
-# Video: The Pull-Merge-Push Workflow
+## Video: The Pull-Merge-Push Workflow ##
 code all_checks.py # modify file
 git add -p
 git commit -m "Rename min_absolute to min_gb, use parameter names"
@@ -9,7 +9,7 @@ git add all_checks.py
 git commit
 git push
 
-# Video: Pushing Remote Branches
+## Video: Pushing Remote Branches ##
 git checkout -b refactor # create and switch to new branch 
 code all_checks.py # modify
 git commit -a -m "Create wrapper function for check_disk_full"
