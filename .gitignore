@@ -63,6 +63,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Profiler outputs
+profile.out
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
