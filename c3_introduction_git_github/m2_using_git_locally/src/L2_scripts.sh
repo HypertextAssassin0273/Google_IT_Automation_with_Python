@@ -26,7 +26,6 @@ git add gather-information.sh
 git commit --ammend # add a line of description in editor
 
 # Video: Rollbacks
-
 cd scripts
 atom all_checks.py # modify file
 git commit -a -m "Add call to disk_full function"
