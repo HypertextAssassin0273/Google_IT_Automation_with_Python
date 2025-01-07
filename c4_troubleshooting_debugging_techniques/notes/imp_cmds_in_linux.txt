@@ -1,0 +1,78 @@
+1) pipe output to code editor using '-':
+echo Hello World | code -
+
+2) system monitoring tools (for resources & stats) :
+top, sudo top, top -b -n 1 > output.txt   [[ system (cpu/memory) ]]
+sudo iftop   [[ network interface (bandwith) ]]
+sudo iotop   [[ disk i/o (bottleneck, r/w speed) ]]
+
+3) automates the management of log files (rotating/compressing/deleting):
+logrotate
+
+4) find response time & other stats for website:
+ab -n <total_req> <website>
+ab -n 100 https://example.com
+
+5) adjust scheduling priority of processes:
+nice -<prioirty_no> <process_name/no>   [[ for halted processes ]]
+nice -10 bash, nice -10 392
+
+sudo renice -n <prioirty_no> -p <process_no>   [[ for running processes ]]
+sudo renice -n 15 -p 392
+
+ionice -p <process_id>   [[ for running disk i/o processes ]]
+ionice -p 1024, sudo ionice -c 1 -n 0 bash
+
+[[ https://www.geeksforgeeks.org/nice-and-renice-command-in-linux-with-examples,
+   https://www.geeksforgeeks.org/ionice-command-in-linux-with-examples ]]
+
+6) windows monitoring tools (in linux):
+resmon.exe    [[ resource monitor ]]
+perfmon.exe   [[ performance monitor ]]
+
+7) analyze language profiles (using profilers):
+gprof <executable> <gmon.out>  > output.txt                         [[ c-tool for .c programs ]]
+python3 -m cProfile ./<script.py> <params...>                       [[ py-module for .py programs ]]
+pprofile3 -f callgrind ./<script.py> <params...> -o <profile.out>   [[ py-tool for .py programs ]]
+
+[[ NOTE: gprof reqs. your program to be compiled with profiling enabled to generate gmon.out file ]]
+
+8) gui app for python profilers:
+kcachegrind <profile.out>
+
+9) show all running processes in scrolling menu:
+ps ax | less   [[ use '/' to search processes ]]
+
+10) apply signals on process/processes: (default -> SIGTERM)
+kill, killall -STOP <process_name/pattern>   [[ pause/suspend -> SIGTSTP ]]
+kill, killall -CONT <process_name/pattern>   [[ continue/resume -> SIGCONT ]]
+
+11) search for files:
+locate [[ uses indexed db for lookups, v fast but needs to updated manually (e.g. shedule  CRON job) ]]
+locate static/webm*
+find [[ searches in real time, slow but up-to-date ]]
+find . -name "*.py"
+
+12) trace application (for blackbox debugging):
+strace | less, strace -o <filename>  [[ systemcall ]]
+ltrace | less, ltrace -o <filename>  [[ library ]]
+
+13) system resources stats (& history):
+iostat, iostat -xd   [[ disk i/o ]]
+vmstat, vmstat -s    [[ virtual memory ]]
+
+14) synchronize files (both locally & remotely):
+rsync <source_dir/ssh> <destination_dir/ssh>
+rsync -bwlimit source/ destination/  [[ limiting bandwith ]]
+
+trickle -d <download_limit_in_kbps> -u <upload_limit_in_kbps>
+trickle -d 1000 -u 500 rsync -avz src/ dest/   [[ limiting bandwith ]]
+
+[[ https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories ]]
+
+15) find time taken by a command to execute:
+time <command>
+
+16) run debugging server for testing:
+python3 -m smtpd -c DebuggingServer -n localhost:<port>   [[ for smtp ]]
+python3 -m http.server 8000 --bind <ip>   [[ for http, bind to specific ip ]]
