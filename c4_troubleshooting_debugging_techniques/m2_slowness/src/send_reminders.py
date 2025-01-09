@@ -60,4 +60,4 @@ if __name__ == '__main__':
     sys.exit(main())
 
 
-# SIDE-NOTE: use command 'python3 -m smtpd -c DebuggingServer -n localhost:1025' to start a debugging server before running this script
+# SIDE-NOTE: use command 'aiosmtpd -n -l :1025' to start a debugging server before running this script
