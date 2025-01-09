@@ -83,3 +83,16 @@ python3 -m smtpd -c DebuggingServer -n localhost:1025
 python3 -m aiosmtpd -n -d -l <localhost>:<port>   [[ NEW, for smtp, d: debug mode, l: listen on port ]] 
 aiosmtpd -n -d -l <localhost>:<port>   [[ run as cmd ]]
 aiosmtpd -n -l :1025
+
+17) use cache for faster lookups:
+memcached [[ in-memory key-value store ]]
+memcached -m 1024 -p 11211
+
+redis-server [[ in-memory data structure store (easy to use) ]]
+redis-server --port 6379
+
+varnishd [[ reverse proxy & http accelerator ]]
+varnishd -a :6081 -T localhost:6082 -f /etc/varnish/default.vcl -s malloc,1G   [[a: listen addr, T: admin addr, f: config file, s: storage type & size]]
+
+squid [[ caching proxy server (forward & reverse) ]]
+squid -N -d 1   [[ -N: no daemon, -d: debug level ]]
