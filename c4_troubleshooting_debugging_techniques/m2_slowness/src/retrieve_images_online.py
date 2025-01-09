@@ -51,3 +51,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# NOTE: The ACCESS_KEY is a placeholder for the actual access key that you need to obtain from Unsplash.
+# SIDE-NOTE: we can improve the script by adding concurrency to download multiple images simultaneously.

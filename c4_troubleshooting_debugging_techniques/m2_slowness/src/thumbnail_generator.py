@@ -49,7 +49,7 @@ def main():
 
     os.makedirs('thumbnails', exist_ok=True) # create the thumbnail directory
 
-    executor = futures.ThreadPoolExecutor()
+    executor = futures.ProcessPoolExecutor() # alternate: ThreadPoolExecutor()
     for root, _, files in os.walk('images'):
         for basename in progress_bar(files):
             if basename.endswith('.jpg'):
@@ -64,3 +64,7 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+# NOTE: here ProcessPoolExecutor() performs better than ThreadPoolExecutor() because of the GIL in Python.
+# SIDE-NOTE: GIL might become optional in upcoming Python version (3.13).
