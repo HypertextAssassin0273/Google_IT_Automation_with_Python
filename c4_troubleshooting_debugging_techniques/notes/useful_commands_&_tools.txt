@@ -48,7 +48,7 @@ kill, killall -STOP <process_name/pattern>   [[ pause/suspend -> SIGTSTP ]]
 kill, killall -CONT <process_name/pattern>   [[ continue/resume -> SIGCONT ]]
 
 11) search for files:
-locate [[ uses indexed db for lookups, v fast but needs to updated manually (e.g. shedule  CRON job) ]]
+locate [[ uses indexed db for lookups, v fast but needs to updated manually (e.g. schedule  CRON job) ]]
 locate static/webm*
 find [[ searches in real time, slow but up-to-date ]]
 find . -name "*.py"
@@ -74,5 +74,12 @@ trickle -d 1000 -u 500 rsync -avz src/ dest/   [[ limiting bandwith ]]
 time <command>
 
 16) run debugging server for testing:
-python3 -m smtpd -c DebuggingServer -n localhost:<port>   [[ for smtp ]]
-python3 -m http.server 8000 --bind <ip>   [[ for http, bind to specific ip ]]
+python3 -m http.server <port> --bind <ip>   [[ for http, bind to specific ip ]]
+python3 -m http.server 8000
+
+python3 -m smtpd -c DebuggingServer -n localhost:<port>   [[ DEPRECATED, for smtp ]]
+python3 -m smtpd -c DebuggingServer -n localhost:1025
+
+python3 -m aiosmtpd -n -d -l <localhost>:<port>   [[ NEW, for smtp, d: debug mode, l: listen on port ]] 
+aiosmtpd -n -d -l <localhost>:<port>   [[ run as cmd ]]
+aiosmtpd -n -l :1025
